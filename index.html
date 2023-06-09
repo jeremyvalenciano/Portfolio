@@ -6,15 +6,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/dist/output.css" rel="stylesheet">
-
-  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <title>Jeremy Valenciano</title>
+  <link rel="icon" type="image/x-icon" href="./img/logo.png">
 </head>
+<!--Main container-->
 
 <body class="bg-bgColorBlack">
   <div class="container px-6 py-4 ">
+    <!--Navbar-->
     <header class="flex justify-between">
       <div class="w-14">
-        <img src="./img/logo.png" class="" alt="logo">
+        <img src="./img/logo.png" alt="logo">
       </div>
       <div class="icon nav-icon-5">
         <span></span>
@@ -22,19 +25,26 @@
         <span></span>
       </div>
     </header>
-    <section id="home" class="mt-28 mb-96">
-      <h3 class="text-purpleColor font-semibold tet-lg my-2">Hi, my names is</h3>
-      <h2 class="text-lightGray font-bold text-4xl mb-1">Jeremy Valenciano.</h2>
+    <!--Main content-->
+    <section id="home" class="mt-28 mb-40">
+      <h3 class="text-purpleColor font-semibold text-lg my-2">Hi, my name is</h3>
+      <h1 class="text-lightGray font-bold text-4xl mb-1">Jeremy Valenciano.</h1>
       <h2 class="text-tinyGray font-bold text-2xl mb-8">I code things for the web :)</h2>
-      <p class="text-tinyGray mb-16">I’m a software engineer student specializing in
+      <p class="text-tinyGray mb-16">I'm a software engineer student specializing in
         Front-End technologies. Currently learning JavaScript and
         building some projects to learn about software development.
         <br>
         Thanks for visiting my website!
       </p>
-      <button
-        class="bg-none text-2xl px-8 py-2 text-purpleColor border-purpleColor border-2 rounded-md hover:bg-purpleColor hover:text-white">Projects
-      </button>
+      <a href="#projects">
+        <button
+          class="bg-none text-2xl px-8 py-2 text-purpleColor border-purpleColor border-2 rounded-md hover:bg-purpleColor hover:text-white">Projects
+        </button>
+      </a>
+      <div class="text-white mt-16 text-center">
+        <div><i class="fa-solid fa-arrow-down fa-2xl text-white"></i></div>
+      </div>
+
     </section>
     <section id="about" class="text-lightGray mb-36">
       <h2 class="text-4xl">01. About Me</h2>
@@ -71,19 +81,20 @@
         class="bg-none text-2xl px-8 py-2 text-purpleColor border-purpleColor border-2 rounded-md hover:bg-purpleColor hover:text-white">Resume
       </button>
     </section>
+    <!-- Projects section-->
     <section id="projects" class="text-lightGray">
       <h2 class="text-4xl">02. Some Things <br> I've Build</h2>
       <hr class="w-auto my-4 h-0 mx-auto bg-white" />
       <!-- Card Container -->
-      <div class="">
+      <div>
         <!-- Card -->
         <div class="p-6 bg-slate-900 rounded-md my-8">
           <p class="text-purpleColor">Featured Project</p>
-          <h3 class="text-3xl font-bold mb-8">Todo App</h3>
+          <h3 class="text-3xl font-bold mb-8">Car insurance calculator</h3>
           <!-- Project Description-->
           <div>
             <p>
-              A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on
+              Find out how much you should be paying for your car insurance.
             </p>
           </div>
           <!-- Project technologies -->
@@ -94,30 +105,33 @@
               <li class="py-1 px-3 mb-2 rounded-lg w-auto text-purpleColor border-purpleColor border-2 inline-block">
                 JavaScript</li>
               <li class="py-1 px-3 mb-2 rounded-lg w-auto text-purpleColor border-purpleColor border-2 inline-block">
-                Phyton</li>
-              <li class="py-1 px-3 mb-2 rounded-lg w-auto text-purpleColor border-purpleColor border-2 inline-block">SQL
-              </li>
+                Tailwind CSS</li>
               <li class="py-1 px-3 mb-2 rounded-lg w-auto text-purpleColor border-purpleColor border-2 inline-block">
-                PostgreSQL</li>
+                Flexbox</li>
             </ul>
-            <div class="felx space-x-4">
-              <a href="#" target="_blank" rel="noopener noreferrer">
+            <div class="space-x-4">
+              <a href="https://github.com/jeremyvalenciano/Car-Insurance-Calculator" target="_blank"
+                rel="noopener noreferrer">
                 <i class="fab fa-github fa-lg"></i>
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://car-insurance-calculator-js.netlify.app/" target="_blank" rel="noopener noreferrer">
                 <i class="fas fa-external-link-alt fa-lg"></i>
               </a>
             </div>
           </div>
 
         </div>
+        <!-- Card -->
         <div class="p-6 bg-slate-900 rounded-md my-8">
           <p class="text-purpleColor">Featured Project</p>
-          <h3 class="text-3xl font-bold mb-8">Todo App</h3>
+          <h3 class="text-3xl font-bold mb-8">Ecommerce car</h3>
           <!-- Project Description-->
           <div>
             <p>
-              A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on
+              This project is a simulation of an eccommerce store cart, we can add products to the cart and modified the
+              quantity of
+              the products, we can see the final price amount of the cart and I have added some buttons to simulate the
+              order.
             </p>
           </div>
           <!-- Project technologies -->
@@ -134,42 +148,45 @@
               <li class="py-1 px-3 mb-2 rounded-lg w-auto text-purpleColor border-purpleColor border-2 inline-block">
                 PostgreSQL</li>
             </ul>
-            <div class="felx space-x-4">
-              <a href="#" target="_blank" rel="noopener noreferrer">
+            <div class="space-x-4">
+              <a href="https://github.com/jeremyvalenciano/Ecommerce-Store" target="_blank" rel="noopener noreferrer">
                 <i class="fab fa-github fa-lg"></i>
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://ecommerce-cart-test.netlify.app" target="_blank" rel="noopener noreferrer">
                 <i class="fas fa-external-link-alt fa-lg"></i>
               </a>
             </div>
           </div>
 
         </div>
+        <!-- Card -->
         <div class="p-6 bg-slate-900 rounded-md my-8">
           <p class="text-purpleColor">Featured Project</p>
-          <h3 class="text-3xl font-bold mb-8">Todo App</h3>
+          <h3 class="text-3xl font-bold mb-8">Flutter mechanic workshop app</h3>
           <!-- Project Description-->
           <div>
             <p>
-              A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on
+              Just a simple mechanic workshop app made with flutter and sqlite. Manege employees clients, cars and
+              services, and
+              generate a pdf ticket of the services.
             </p>
           </div>
           <!-- Project technologies -->
           <div>
             <ul class="my-10">
               <li class="py-1 px-3 mb-2 rounded-lg w-auto text-purpleColor border-purpleColor border-2 inline-block">
-                HTML & CSS</li>
+                Flutter</li>
               <li class="py-1 px-3 mb-2 rounded-lg w-auto text-purpleColor border-purpleColor border-2 inline-block">
-                JavaScript</li>
+                Git</li>
               <li class="py-1 px-3 mb-2 rounded-lg w-auto text-purpleColor border-purpleColor border-2 inline-block">
-                Phyton</li>
-              <li class="py-1 px-3 mb-2 rounded-lg w-auto text-purpleColor border-purpleColor border-2 inline-block">SQL
+                Dart</li>
+              <li class="py-1 px-3 mb-2 rounded-lg w-auto text-purpleColor border-purpleColor border-2 inline-block">
+                SQLite
               </li>
-              <li class="py-1 px-3 mb-2 rounded-lg w-auto text-purpleColor border-purpleColor border-2 inline-block">
-                PostgreSQL</li>
+
             </ul>
             <div class="felx space-x-4">
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/jeremyvalenciano/GDLCUSTOMS" target="_blank" rel="noopener noreferrer">
                 <i class="fab fa-github fa-lg"></i>
               </a>
               <a href="#" target="_blank" rel="noopener noreferrer">
@@ -216,18 +233,26 @@
       <h3 class="font-bold text-2xl mb-4">SOCIAL</h3>
       <div>
         <ul class="flex justify-around w-1/2">
-          <li>
-            <i class="fab fa-linkedin fa-2x"></i>
-          </li>
-          <li>
-            <i class="fab fa-instagram fa-2x"></i>
-          </li>
-          <li>
-            <i class="fab fa-twitter fa-2x"></i>
-          </li>
-          <li>
-            <i class="fab fa-github fa-2x"></i>
-          </li>
+          <a href="https://www.linkedin.com/in/jeremyvalenciano/" target="_blank" rel="noopener noreferrer">
+            <li>
+              <i class="fab fa-linkedin fa-2x"></i>
+            </li>
+          </a>
+          <a href="https://www.instagram.com/jeremyvalencii/" target="_blank" rel="noopener noreferrer">
+            <li>
+              <i class="fab fa-instagram fa-2x"></i>
+            </li>
+          </a>
+          <a href="https://twitter.com/JeremyValencii" target="_blank" rel="noopener noreferrer">
+            <li>
+              <i class="fab fa-twitter fa-2x"></i>
+            </li>
+          </a>
+          <a href="https://github.com/jeremyvalenciano" target="_blank" rel="noopener noreferrer">
+            <li>
+              <i class="fab fa-github fa-2x"></i>
+            </li>
+          </a>
         </ul>
       </div>
     </div>
@@ -235,6 +260,7 @@
       <h3 class="font-bold my-6">JEREMY VALENCIANO</h3>
       <p>Software Engineer student learning to code and building web applications.
       </p>
+
     </div>
     <hr class="w-auto my-8 h-0 mx-auto bg-white" />
 
@@ -245,7 +271,8 @@
 
   </footer>
   <script src="./js/app.js"></script>
-  <script src="https://kit.fontawesome.com/c296f3d551.js" crossorigin="anonymous"></script>
+  <!--<script src="https://kit.fontawesome.com/c296f3d551.js" crossorigin="anonymous"></script> -->
+
 </body>
 
 </html>
